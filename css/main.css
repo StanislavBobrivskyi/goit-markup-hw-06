@@ -802,8 +802,17 @@ body {
   border-color: var(--filtr-btn-text-color);
 }
 
+.modal-form-check {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
 .modal-form-check-descr::before {
   display: block;
+  display: flex;
+  align-content: center;
   width: 16px;
   height: 16px;
   content: "";
@@ -815,7 +824,11 @@ body {
 
 .modal-form-check:checked + .modal-form-check-descr::before {
   background-color: var(--filtr-btn-color);
-  background-image: url(../images/click-2.svg);
+  border-color: var(--filtr-btn-color);
+  background-image: url("../images/vector.svg");
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .modal-form-check:hover + .modal-form-check-descr::before {
