@@ -930,4 +930,5 @@ body {
 .footer-modal-form-submit:hover,
 .footer-modal-form-submit:focus {
   background-color: var(--filtr-btn-color);
+  border-color: var(--filtr-btn-color);
 }
