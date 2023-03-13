@@ -731,7 +731,7 @@ body {
 
 /* modal-form */
 
-.vodal-form {
+.modal-form {
   display: flex;
   flex-direction: column;
 }
@@ -744,7 +744,7 @@ body {
   margin-bottom: 21px;
   color: var(--background-color);
 }
-.nodal-form-feald {
+.modal-form-feald {
   margin-bottom: 8px;
 }
 .modal-form-descr {
@@ -815,8 +815,7 @@ body {
 
 .modal-form-check:checked + .modal-form-check-descr::before {
   background-color: var(--filtr-btn-color);
-  background-image: url(../images/click.svg);
-  color: var(--primary-white-color);
+  background-image: url(../images/click-2.svg);
 }
 
 .modal-form-check:hover + .modal-form-check-descr::before {
@@ -859,5 +858,63 @@ body {
 
 .modal-form-submit:hover,
 .modal-form-submit:focus {
+  background-color: var(--filtr-btn-color);
+}
+
+/* footer-modal-form */
+
+.footer-modal-form {
+  margin-left: 88px;
+}
+.footer-modal-form-title {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-white-color);
+  margin-bottom: 16px;
+}
+.footer-modal-form-feald {
+  display: flex;
+}
+.footer-modal-form-input {
+  width: 264px;
+  height: 40px;
+  padding-left: 16px;
+  margin-right: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: var(--primary-white-color);
+  background-color: transparent;
+  transition: border-color var(--timing-function);
+}
+
+.footer-modal-form-input:focus {
+  outline: none;
+  border-color: var(--filtr-btn-text-color);
+}
+
+.footer-modal-form-wrapper {
+  display: flex;
+}
+
+.footer-modal-form-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 165px;
+  height: 40px;
+  padding: 8px 24px;
+  gap: 16px;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-modal-form-submit:hover,
+.footer-modal-form-submit:focus {
   background-color: var(--filtr-btn-color);
 }
